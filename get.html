@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>여우비 — 날씨 보고, 미루랑 쉬어요</title>
+<meta name="description" content="주간 날씨·위젯·비 알림·가족 공유, 그리고 여우 미루의 마을까지.">
+<meta property="og:title" content="여우비 — 날씨 보고, 미루랑 쉬어요">
+<meta property="og:image" content="https://mingwonkim.github.io/harujon-assets/yeoubi-icon.png">
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#FFF6EC;color:#2b2b2b;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
+main{padding:32px}img{width:128px;height:128px;border-radius:28px;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+h1{font-size:28px;margin:20px 0 8px}p{margin:0 0 28px;color:#666;line-height:1.5}
+a.btn{display:inline-block;background:#F07A2B;color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:14px 32px;border-radius:999px}
+</style>
+</head>
+<body>
+<main>
+<img src="yeoubi-icon.png" alt="여우비 아이콘">
+<h1>여우비</h1>
+<p>주간 날씨 · 위젯 · 비 알림 · 가족 공유<br>그리고 여우 미루의 마을까지</p>
+<a class="btn" id="go" href="https://apps.apple.com/kr/app/id6790411528">무료로 받기</a>
+</main>
+<script>
+var ios='https://apps.apple.com/kr/app/id6790411528',android='https://play.google.com/store/apps/details?id=com.harujon.app';
+var url=/android/i.test(navigator.userAgent)?android:ios;
+document.getElementById('go').href=url;
+setTimeout(function(){location.href=url},600);
+</script>
+</body>
+</html>
